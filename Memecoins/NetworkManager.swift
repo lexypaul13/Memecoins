@@ -50,6 +50,7 @@ class NetworkManger{
             }
             
             guard let data = data else{
+                print(error!.localizedDescription)
                 completed(.failure(.invalidData))
                 return
             }
@@ -60,7 +61,7 @@ class NetworkManger{
                 }
                 
             } catch{
-                print(ErroMessage.invalidData.rawValue)
+                print(error.localizedDescription)
             }
         }
         task.resume()
