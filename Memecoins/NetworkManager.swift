@@ -28,7 +28,7 @@ class NetworkManger{
     }()
     
     
-    func get<T:Decodable>(_ endPoints: EndPoint,urlString: String, completed:@escaping(Result<T?,ErroMessage>)->Void){
+    func get<T:Decodable>(_ endPoints: EndPoint,urlString: String, completed:@escaping(Result<[T:Any]?,ErroMessage>)->Void){
         
         guard let url = urlBuilder(endPoint: endPoints) else {
             print(ErroMessage.invalidURL.rawValue)
@@ -55,7 +55,7 @@ class NetworkManger{
                 return
             }
             do{
-                let apiResponse = try self.jsonDecoder.decode(T.self, from: data)
+                let apiResponse = try JSONSerialization.jsonObject(with: data, options: []) as? [T:Any]
                 DispatchQueue.main.async {
                     completed(.success(apiResponse))
                 }

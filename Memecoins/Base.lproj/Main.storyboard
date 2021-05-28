@@ -1,24 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HTv-W1-enq">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Watch List-->
+        <scene sceneID="7Yf-XE-QZ4">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Xne-Mw-BAY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3fu-m9-Y5C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="OpA-HH-Vu6"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Watch List" image="list.dash" catalog="system" id="LtI-cs-mKq"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPX-lJ-gxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="451" y="439"/>
+        </scene>
+        <!--Memecoins-->
+        <scene sceneID="ArG-fa-z2T">
+            <objects>
+                <viewController id="n0e-u9-zoh" customClass="MemecoinsVC" customModule="Memecoins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="whD-8B-jS8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5aS-oM-O7j">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="memes" rowHeight="146" id="fM5-Va-Qdu" customClass="MemecoinsTableViewCell" customModule="Memecoins" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="146"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fM5-Va-Qdu" id="pz4-CG-GCN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safemoon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZ4-BG-xBU">
+                                                    <rect key="frame" x="17" y="11" width="81.333333333333329" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safemoon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csX-WB-fgt">
+                                                    <rect key="frame" x="17" y="49" width="69" height="18"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0x8076c74c5e3f5852037f31ff0093eeb8c8add8d3" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBf-bD-Rae">
+                                                    <rect key="frame" x="17" y="87" width="184" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" fixedFrame="YES" text="$0.000005536" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BJ-A0-WdV">
+                                                    <rect key="frame" x="283" y="11" width="111" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="csX-WB-fgt" secondAttribute="trailing" constant="328" id="5oT-UN-WFC"/>
+                                                <constraint firstAttribute="bottom" secondItem="MBf-bD-Rae" secondAttribute="bottom" constant="23" id="Ais-Cz-8jS"/>
+                                                <constraint firstItem="MBf-bD-Rae" firstAttribute="top" secondItem="csX-WB-fgt" secondAttribute="bottom" constant="20" id="Dlq-9s-SVB"/>
+                                                <constraint firstAttribute="trailing" secondItem="MBf-bD-Rae" secondAttribute="trailing" constant="213" id="NmY-Gs-x22"/>
+                                                <constraint firstItem="csX-WB-fgt" firstAttribute="leading" secondItem="pz4-CG-GCN" secondAttribute="leading" constant="17" id="UUR-T1-Ti5"/>
+                                                <constraint firstItem="csX-WB-fgt" firstAttribute="top" secondItem="hZ4-BG-xBU" secondAttribute="bottom" constant="16" id="XbI-sV-5KN"/>
+                                                <constraint firstItem="MBf-bD-Rae" firstAttribute="leading" secondItem="pz4-CG-GCN" secondAttribute="leading" constant="17" id="YJD-q4-hig"/>
+                                                <constraint firstItem="hZ4-BG-xBU" firstAttribute="leading" secondItem="pz4-CG-GCN" secondAttribute="leading" constant="17" id="j7z-Tx-e0T"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="address" destination="MBf-bD-Rae" id="g72-Rh-xje"/>
+                                            <outlet property="coinName" destination="hZ4-BG-xBU" id="r51-WA-ky7"/>
+                                            <outlet property="memeprice" destination="6BJ-A0-WdV" id="DqA-mP-4Os"/>
+                                            <outlet property="tickerSymbol" destination="csX-WB-fgt" id="Twd-fr-oFO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="whD-8B-jS8" id="g8d-ZY-uoy"/>
+                                    <outlet property="delegate" destination="whD-8B-jS8" id="69B-Nn-R8g"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ukM-8I-MA3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5aS-oM-O7j" firstAttribute="top" secondItem="ukM-8I-MA3" secondAttribute="top" id="11S-2t-tjE"/>
+                            <constraint firstItem="5aS-oM-O7j" firstAttribute="leading" secondItem="ukM-8I-MA3" secondAttribute="leading" id="FaG-YR-t58"/>
+                            <constraint firstItem="5aS-oM-O7j" firstAttribute="trailing" secondItem="ukM-8I-MA3" secondAttribute="trailing" id="Fcl-d0-cP6"/>
+                            <constraint firstItem="5aS-oM-O7j" firstAttribute="bottom" secondItem="ukM-8I-MA3" secondAttribute="bottom" id="cqg-CG-FOh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Memecoins" id="Mn9-fw-Opi"/>
+                    <connections>
+                        <outlet property="tableView" destination="5aS-oM-O7j" id="L99-e2-m1y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pn3-pq-wHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-224"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Tg7-4P-xfr">
+            <objects>
+                <tabBarController id="HTv-W1-enq" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vEC-Sv-NnM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ta9-DY-Xz5" kind="relationship" relationship="viewControllers" id="saq-BB-H1Q"/>
+                        <segue destination="Xne-Mw-BAY" kind="relationship" relationship="viewControllers" id="3gq-LE-6qH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d2h-It-xLR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="68"/>
+        </scene>
+        <!--Memecoins-->
+        <scene sceneID="WLh-mV-Qwq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ta9-DY-Xz5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Memecoins" image="chart.bar" catalog="system" id="445-WH-Kmj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JCh-6N-e6O">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n0e-u9-zoh" kind="relationship" relationship="rootViewController" id="xjV-Sz-PJU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCz-zw-3OD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450.72463768115944" y="-236.38392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

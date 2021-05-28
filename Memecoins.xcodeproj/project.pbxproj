@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57181DDF265B025E00D78A67 /* MemecoinsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57181DDE265B025E00D78A67 /* MemecoinsVC.swift */; };
+		57181DE1265B0A3100D78A67 /* MemecoinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */; };
 		575B5D922658C5CE00FEB99F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5D912658C5CE00FEB99F /* AppDelegate.swift */; };
 		575B5D942658C5CE00FEB99F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5D932658C5CE00FEB99F /* SceneDelegate.swift */; };
-		575B5D962658C5CE00FEB99F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5D952658C5CE00FEB99F /* ViewController.swift */; };
 		575B5D992658C5CE00FEB99F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575B5D972658C5CE00FEB99F /* Main.storyboard */; };
 		575B5D9B2658C5D000FEB99F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575B5D9A2658C5D000FEB99F /* Assets.xcassets */; };
 		575B5D9E2658C5D000FEB99F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575B5D9C2658C5D000FEB99F /* LaunchScreen.storyboard */; };
@@ -38,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57181DDE265B025E00D78A67 /* MemecoinsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemecoinsVC.swift; sourceTree = "<group>"; };
+		57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemecoinsTableViewCell.swift; sourceTree = "<group>"; };
 		575B5D8E2658C5CE00FEB99F /* Memecoins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memecoins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575B5D912658C5CE00FEB99F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575B5D932658C5CE00FEB99F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		575B5D952658C5CE00FEB99F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		575B5D982658C5CE00FEB99F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		575B5D9A2658C5D000FEB99F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		575B5D9D2658C5D000FEB99F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,7 +112,8 @@
 				575B5DC12658C5F300FEB99F /* Memecoins.swift */,
 				575B5DC32658C8C800FEB99F /* NetworkManager.swift */,
 				575B5DC52658CCE400FEB99F /* ErrorMessages.swift */,
-				575B5D952658C5CE00FEB99F /* ViewController.swift */,
+				57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */,
+				57181DDE265B025E00D78A67 /* MemecoinsVC.swift */,
 				575B5D972658C5CE00FEB99F /* Main.storyboard */,
 				575B5D9A2658C5D000FEB99F /* Assets.xcassets */,
 				575B5D9C2658C5D000FEB99F /* LaunchScreen.storyboard */,
@@ -267,12 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575B5D962658C5CE00FEB99F /* ViewController.swift in Sources */,
 				575B5D922658C5CE00FEB99F /* AppDelegate.swift in Sources */,
 				575B5DC62658CCE400FEB99F /* ErrorMessages.swift in Sources */,
 				575B5DC42658C8C800FEB99F /* NetworkManager.swift in Sources */,
 				575B5DC22658C5F300FEB99F /* Memecoins.swift in Sources */,
 				575B5D942658C5CE00FEB99F /* SceneDelegate.swift in Sources */,
+				57181DDF265B025E00D78A67 /* MemecoinsVC.swift in Sources */,
+				57181DE1265B0A3100D78A67 /* MemecoinsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

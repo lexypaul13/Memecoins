@@ -12,7 +12,7 @@ struct Memecoins:Codable {
 }
 
 // MARK: - Datum
-struct MemecoinData:Codable {
+struct MemecoinData:Codable, Hashable {
     let name, symbol, price, priceBNB: String?
 }
 
