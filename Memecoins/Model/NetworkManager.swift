@@ -11,7 +11,6 @@ class NetworkManger{
     
     enum EndPoint{
         case tokens
-        case news
     }
     
     static let  shared = NetworkManger()
@@ -114,8 +113,6 @@ class NetworkManger{
         switch endPoint {
         case .tokens:
             return URL(string: baseURL + apiKeyPathCompononent )
-        case .news:
-            return URL(string: newsURL + apiKeyPathCompononent_2)
         }
     }
 }
