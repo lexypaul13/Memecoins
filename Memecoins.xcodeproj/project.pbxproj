@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		57181DDF265B025E00D78A67 /* MemecoinsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57181DDE265B025E00D78A67 /* MemecoinsVC.swift */; };
 		57181DE1265B0A3100D78A67 /* MemecoinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */; };
+		573027F526799B9B00C092EF /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573027F426799B9B00C092EF /* String+Ext.swift */; };
 		575B5D922658C5CE00FEB99F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5D912658C5CE00FEB99F /* AppDelegate.swift */; };
 		575B5D942658C5CE00FEB99F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5D932658C5CE00FEB99F /* SceneDelegate.swift */; };
 		575B5D992658C5CE00FEB99F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575B5D972658C5CE00FEB99F /* Main.storyboard */; };
@@ -19,6 +20,9 @@
 		575B5DC22658C5F300FEB99F /* Memecoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5DC12658C5F300FEB99F /* Memecoins.swift */; };
 		575B5DC42658C8C800FEB99F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5DC32658C8C800FEB99F /* NetworkManager.swift */; };
 		575B5DC62658CCE400FEB99F /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5DC52658CCE400FEB99F /* ErrorMessages.swift */; };
+		577FD23326BE1694008C0F55 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FD23226BE1694008C0F55 /* NewsModel.swift */; };
+		577FD23526BE1780008C0F55 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FD23426BE1780008C0F55 /* NewsTableViewCell.swift */; };
+		577FD23726BE18CF008C0F55 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FD23626BE18CF008C0F55 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,7 @@
 /* Begin PBXFileReference section */
 		57181DDE265B025E00D78A67 /* MemecoinsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemecoinsVC.swift; sourceTree = "<group>"; };
 		57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemecoinsTableViewCell.swift; sourceTree = "<group>"; };
+		573027F426799B9B00C092EF /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		575B5D8E2658C5CE00FEB99F /* Memecoins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memecoins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575B5D912658C5CE00FEB99F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575B5D932658C5CE00FEB99F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +62,9 @@
 		575B5DC12658C5F300FEB99F /* Memecoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memecoins.swift; sourceTree = "<group>"; };
 		575B5DC32658C8C800FEB99F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		575B5DC52658CCE400FEB99F /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		577FD23226BE1694008C0F55 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		577FD23426BE1780008C0F55 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		577FD23626BE18CF008C0F55 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +117,10 @@
 			children = (
 				575B5D912658C5CE00FEB99F /* AppDelegate.swift */,
 				575B5D932658C5CE00FEB99F /* SceneDelegate.swift */,
-				575B5DC12658C5F300FEB99F /* Memecoins.swift */,
-				575B5DC32658C8C800FEB99F /* NetworkManager.swift */,
-				575B5DC52658CCE400FEB99F /* ErrorMessages.swift */,
-				57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */,
-				57181DDE265B025E00D78A67 /* MemecoinsVC.swift */,
+				573027F426799B9B00C092EF /* String+Ext.swift */,
+				579B4DC126BF4A6D00D29A86 /* Model */,
+				579B4DC226BF4A8A00D29A86 /* Views */,
+				579B4DC326BF4AB700D29A86 /* Controller */,
 				575B5D972658C5CE00FEB99F /* Main.storyboard */,
 				575B5D9A2658C5D000FEB99F /* Assets.xcassets */,
 				575B5D9C2658C5D000FEB99F /* LaunchScreen.storyboard */,
@@ -138,6 +145,35 @@
 				575B5DB52658C5D000FEB99F /* Info.plist */,
 			);
 			path = MemecoinsUITests;
+			sourceTree = "<group>";
+		};
+		579B4DC126BF4A6D00D29A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				575B5DC12658C5F300FEB99F /* Memecoins.swift */,
+				577FD23226BE1694008C0F55 /* NewsModel.swift */,
+				575B5DC32658C8C800FEB99F /* NetworkManager.swift */,
+				575B5DC52658CCE400FEB99F /* ErrorMessages.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		579B4DC226BF4A8A00D29A86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				577FD23426BE1780008C0F55 /* NewsTableViewCell.swift */,
+				57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		579B4DC326BF4AB700D29A86 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57181DDE265B025E00D78A67 /* MemecoinsVC.swift */,
+				577FD23626BE18CF008C0F55 /* NewsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,10 +308,14 @@
 			files = (
 				575B5D922658C5CE00FEB99F /* AppDelegate.swift in Sources */,
 				575B5DC62658CCE400FEB99F /* ErrorMessages.swift in Sources */,
+				577FD23526BE1780008C0F55 /* NewsTableViewCell.swift in Sources */,
 				575B5DC42658C8C800FEB99F /* NetworkManager.swift in Sources */,
+				577FD23726BE18CF008C0F55 /* NewsViewController.swift in Sources */,
+				577FD23326BE1694008C0F55 /* NewsModel.swift in Sources */,
 				575B5DC22658C5F300FEB99F /* Memecoins.swift in Sources */,
 				575B5D942658C5CE00FEB99F /* SceneDelegate.swift in Sources */,
 				57181DDF265B025E00D78A67 /* MemecoinsVC.swift in Sources */,
+				573027F526799B9B00C092EF /* String+Ext.swift in Sources */,
 				57181DE1265B0A3100D78A67 /* MemecoinsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
