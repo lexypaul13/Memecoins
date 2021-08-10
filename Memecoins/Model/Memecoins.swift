@@ -6,16 +6,25 @@
 import Foundation
 
 // MARK: - Welcome
-class Memecoins: NSObject{
+class Memecoins:Decodable, Equatable, Encodable {
+  
+    static func == (lhs: Memecoins, rhs: Memecoins) -> Bool {
+        return
+            lhs.name == rhs.name &&
+            lhs.price == rhs.price &&
+            lhs.price_BNB == rhs.price_BNB &&
+            lhs.simple == rhs.simple
+    }
+    
     var name:String = ""
     var price: String = ""
     var price_BNB :String = ""
     var simple :String = ""
     
-    override init() {
-        super.init()
-    }
-    
+//    override init() {
+//        super.init()
+//    }
+//    
     init(withDicitonary:[String:Any]){
         if let value = withDicitonary["name"] as? String{
             name = value

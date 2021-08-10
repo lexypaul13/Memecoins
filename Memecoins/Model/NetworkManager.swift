@@ -18,7 +18,8 @@ class NetworkManger{
     private var newsURL  = "https://newsapi.org/v2/top-headlines?"
     private var apiKeyPathCompononent :String
     private var apiKeyPathCompononent_2 = "country=us&category=business&apiKey=d32071cd286c4f6b9c689527fc195b03"
-    
+    let cache   = NSCache<NSString, UIImage>()
+
     private init(){
         self.baseURL = "https://api.pancakeswap.info"
         self.apiKeyPathCompononent = "/api/tokens"
@@ -70,7 +71,7 @@ class NetworkManger{
     }
     
     
-
+    
     func getNews(completed: @escaping (Result<NewDataModel, ErroMessage>) -> Void) {
         let endpoint = newsURL + apiKeyPathCompononent_2
         
@@ -98,6 +99,7 @@ class NetworkManger{
             
             do {
                 let apiResponse = try self.jsonDecoder.decode(NewDataModel.self, from: data)
+                print(apiResponse)
                 completed(.success(apiResponse))
             }catch{
                 print(error.localizedDescription)
@@ -108,11 +110,17 @@ class NetworkManger{
     }
     
     
+
+    
+    
     private func urlBuilder(endPoint:EndPoint, page:Int?=nil, query:String? = nil)->URL?{
-        
         switch endPoint {
         case .tokens:
             return URL(string: baseURL + apiKeyPathCompononent )
         }
     }
+    
+    
 }
+
+

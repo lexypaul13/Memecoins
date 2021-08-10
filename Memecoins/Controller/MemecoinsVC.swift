@@ -37,7 +37,6 @@ class MemecoinsVC: UIViewController {
     func configureTableView(){
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.backgroundColor = .black
         
     }
     
@@ -96,11 +95,27 @@ extension MemecoinsVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let save = UIContextualAction(style: .normal, title: "Save") { (_, _, completionHandler) in
             completionHandler(true)
+       
+        
         }
+        
         save.backgroundColor = .systemBlue
         let swipe =  UISwipeActionsConfiguration(actions: [save])
         return swipe
     }
+    
+//    
+//    func addCars(savedCoins:Memecoins){
+//        let savedCoins = Memecoins(withDicitonary: <#[String : Any]#>)
+//        
+//            SaveManger.updateWith(favorite: savedCars, actionType: .add, key: SaveManger.Keys.favorites) { error in
+//            guard error != nil else{
+//                self.alert(message: "Saved", title: "")
+//                return
+//            }
+//            self.alert(message: CFError.saveFailure.rawValue, title: "")
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -120,7 +135,6 @@ extension MemecoinsVC: UITableViewDataSource, UITableViewDelegate{
         cell.coinName.text = memeCoins.name.trunc(length: 29)
         cell.memeprice.text = formatedPrice
         cell.tickerSymbol.text = memeCoins.simple
-        cell.address.text = String(memeCoins.hashValue)
         return cell
     }
     

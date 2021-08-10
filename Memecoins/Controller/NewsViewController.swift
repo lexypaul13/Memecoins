@@ -17,6 +17,8 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
         getArticles()
         configureTableView()
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
     }
     
     
@@ -39,7 +41,7 @@ class NewsViewController: UIViewController {
             guard let self = self else{return}
             switch results{
             case .success(let news):
-                self.news = news.articles
+                self.news = news.articles ?? []
                 print(self.news)
                 DispatchQueue.main.async {self.tableView.reloadData()}
                 
@@ -56,14 +58,25 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news.count
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       let stories = news
+       if segue.identifier == "articles"{
+           let destinationController = segue.destination as! ArticleViewController
+        destinationController.website = stories[(tableView.indexPathForSelectedRow?.row)!]
+       }
+   }
+
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "news", for: indexPath) as! NewsTableViewCell
         let article = news[indexPath.row]
-        cell.newsTitle.text = article.title
-      //  cell.newsDate.text = article.publishedAt
+        cell.newsTitle.text = article.source?.name
+        cell.newsDate.text = article.publishedAt?.convertToDisplayFormat()
         cell.newsDescription.text = article.articleDescription
-        
+        cell.newsImage.downloadImage(from: article.urlToImage ?? "No Image")
         return cell
     }
     

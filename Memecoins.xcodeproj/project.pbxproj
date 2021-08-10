@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		57181DDF265B025E00D78A67 /* MemecoinsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57181DDE265B025E00D78A67 /* MemecoinsVC.swift */; };
 		57181DE1265B0A3100D78A67 /* MemecoinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */; };
-		573027F526799B9B00C092EF /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573027F426799B9B00C092EF /* String+Ext.swift */; };
+		572248ED26C06BA7001A8C0C /* UIimageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572248EC26C06BA7001A8C0C /* UIimageDownloader.swift */; };
+		572248EF26C06F97001A8C0C /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572248EE26C06F97001A8C0C /* ArticleViewController.swift */; };
+		573027F526799B9B00C092EF /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573027F426799B9B00C092EF /* String+Date.swift */; };
 		575B5D922658C5CE00FEB99F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5D912658C5CE00FEB99F /* AppDelegate.swift */; };
 		575B5D942658C5CE00FEB99F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575B5D932658C5CE00FEB99F /* SceneDelegate.swift */; };
 		575B5D992658C5CE00FEB99F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575B5D972658C5CE00FEB99F /* Main.storyboard */; };
@@ -23,6 +25,9 @@
 		577FD23326BE1694008C0F55 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FD23226BE1694008C0F55 /* NewsModel.swift */; };
 		577FD23526BE1780008C0F55 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FD23426BE1780008C0F55 /* NewsTableViewCell.swift */; };
 		577FD23726BE18CF008C0F55 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FD23626BE18CF008C0F55 /* NewsViewController.swift */; };
+		57D4A7CE26C1B80A00D25EB7 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4A7CD26C1B80A00D25EB7 /* WatchListViewController.swift */; };
+		57D4A7D026C1B8C700D25EB7 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4A7CF26C1B8C700D25EB7 /* WatchListTableViewCell.swift */; };
+		57D4A7D226C1B9B100D25EB7 /* PersistenceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4A7D126C1B9B100D25EB7 /* PersistenceManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +50,9 @@
 /* Begin PBXFileReference section */
 		57181DDE265B025E00D78A67 /* MemecoinsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemecoinsVC.swift; sourceTree = "<group>"; };
 		57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemecoinsTableViewCell.swift; sourceTree = "<group>"; };
-		573027F426799B9B00C092EF /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		572248EC26C06BA7001A8C0C /* UIimageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIimageDownloader.swift; sourceTree = "<group>"; };
+		572248EE26C06F97001A8C0C /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		573027F426799B9B00C092EF /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		575B5D8E2658C5CE00FEB99F /* Memecoins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memecoins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575B5D912658C5CE00FEB99F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575B5D932658C5CE00FEB99F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +72,9 @@
 		577FD23226BE1694008C0F55 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		577FD23426BE1780008C0F55 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		577FD23626BE18CF008C0F55 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		57D4A7CD26C1B80A00D25EB7 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
+		57D4A7CF26C1B8C700D25EB7 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
+		57D4A7D126C1B9B100D25EB7 /* PersistenceManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +127,12 @@
 			children = (
 				575B5D912658C5CE00FEB99F /* AppDelegate.swift */,
 				575B5D932658C5CE00FEB99F /* SceneDelegate.swift */,
-				573027F426799B9B00C092EF /* String+Ext.swift */,
+				573027F426799B9B00C092EF /* String+Date.swift */,
 				579B4DC126BF4A6D00D29A86 /* Model */,
 				579B4DC226BF4A8A00D29A86 /* Views */,
 				579B4DC326BF4AB700D29A86 /* Controller */,
 				575B5D972658C5CE00FEB99F /* Main.storyboard */,
+				572248EE26C06F97001A8C0C /* ArticleViewController.swift */,
 				575B5D9A2658C5D000FEB99F /* Assets.xcassets */,
 				575B5D9C2658C5D000FEB99F /* LaunchScreen.storyboard */,
 				575B5D9F2658C5D000FEB99F /* Info.plist */,
@@ -153,7 +164,9 @@
 				575B5DC12658C5F300FEB99F /* Memecoins.swift */,
 				577FD23226BE1694008C0F55 /* NewsModel.swift */,
 				575B5DC32658C8C800FEB99F /* NetworkManager.swift */,
+				572248EC26C06BA7001A8C0C /* UIimageDownloader.swift */,
 				575B5DC52658CCE400FEB99F /* ErrorMessages.swift */,
+				57D4A7D126C1B9B100D25EB7 /* PersistenceManger.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 			children = (
 				577FD23426BE1780008C0F55 /* NewsTableViewCell.swift */,
 				57181DE0265B0A3100D78A67 /* MemecoinsTableViewCell.swift */,
+				57D4A7CF26C1B8C700D25EB7 /* WatchListTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +186,7 @@
 			children = (
 				57181DDE265B025E00D78A67 /* MemecoinsVC.swift */,
 				577FD23626BE18CF008C0F55 /* NewsViewController.swift */,
+				57D4A7CD26C1B80A00D25EB7 /* WatchListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,15 +322,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				575B5D922658C5CE00FEB99F /* AppDelegate.swift in Sources */,
+				57D4A7D226C1B9B100D25EB7 /* PersistenceManger.swift in Sources */,
 				575B5DC62658CCE400FEB99F /* ErrorMessages.swift in Sources */,
+				572248ED26C06BA7001A8C0C /* UIimageDownloader.swift in Sources */,
 				577FD23526BE1780008C0F55 /* NewsTableViewCell.swift in Sources */,
+				57D4A7CE26C1B80A00D25EB7 /* WatchListViewController.swift in Sources */,
 				575B5DC42658C8C800FEB99F /* NetworkManager.swift in Sources */,
+				57D4A7D026C1B8C700D25EB7 /* WatchListTableViewCell.swift in Sources */,
 				577FD23726BE18CF008C0F55 /* NewsViewController.swift in Sources */,
 				577FD23326BE1694008C0F55 /* NewsModel.swift in Sources */,
 				575B5DC22658C5F300FEB99F /* Memecoins.swift in Sources */,
 				575B5D942658C5CE00FEB99F /* SceneDelegate.swift in Sources */,
 				57181DDF265B025E00D78A67 /* MemecoinsVC.swift in Sources */,
-				573027F526799B9B00C092EF /* String+Ext.swift in Sources */,
+				572248EF26C06F97001A8C0C /* ArticleViewController.swift in Sources */,
+				573027F526799B9B00C092EF /* String+Date.swift in Sources */,
 				57181DE1265B0A3100D78A67 /* MemecoinsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

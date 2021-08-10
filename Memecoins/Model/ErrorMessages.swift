@@ -12,4 +12,7 @@ enum ErroMessage : String, Error{
     case invalidResponse = "Invalid response from the server. Please try again."
     case invalidData = "The data received from the server was invalid. Please try again."
     case invalidURL = "Not a valid URL"
+    case duplicate = "Duplciate detcteced"
+    case saveFailure = "There was an issue saving this car"
+
 }
