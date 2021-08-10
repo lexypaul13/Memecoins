@@ -67,8 +67,8 @@ class MemecoinsVC: UIViewController {
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-            case .failure(let error):
-                print(error.localizedDescription)
+            case .failure(_):
+                self.alert(message: ErroMessage.unableToComplete.rawValue, title: "No internet Connection")
             }
             
         }
@@ -104,19 +104,19 @@ extension MemecoinsVC: UITableViewDataSource, UITableViewDelegate{
         return swipe
     }
     
-//    
+
 //    func addCars(savedCoins:Memecoins){
-//        let savedCoins = Memecoins(withDicitonary: <#[String : Any]#>)
+//        let savedCoins = Memecoins(from: savedCoins.name as! Decoder)
 //        
-//            SaveManger.updateWith(favorite: savedCars, actionType: .add, key: SaveManger.Keys.favorites) { error in
+//            SaveManger.updateWith(favorite: savedCoins, actionType: .add, key: SaveManger.Keys.favorites) { error in
 //            guard error != nil else{
 //                self.alert(message: "Saved", title: "")
 //                return
 //            }
-//            self.alert(message: CFError.saveFailure.rawValue, title: "")
+//            self.alert(message: ErroMessage.saveFailure.rawValue, title: "")
 //        }
 //    }
-    
+//    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }

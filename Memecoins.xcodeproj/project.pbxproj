@@ -28,6 +28,7 @@
 		57D4A7CE26C1B80A00D25EB7 /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4A7CD26C1B80A00D25EB7 /* WatchListViewController.swift */; };
 		57D4A7D026C1B8C700D25EB7 /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4A7CF26C1B8C700D25EB7 /* WatchListTableViewCell.swift */; };
 		57D4A7D226C1B9B100D25EB7 /* PersistenceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4A7D126C1B9B100D25EB7 /* PersistenceManger.swift */; };
+		57F27B2826C345480051692F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F27B2726C345480051692F /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		57D4A7CD26C1B80A00D25EB7 /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		57D4A7CF26C1B8C700D25EB7 /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
 		57D4A7D126C1B9B100D25EB7 /* PersistenceManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManger.swift; sourceTree = "<group>"; };
+		57F27B2726C345480051692F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				575B5DC12658C5F300FEB99F /* Memecoins.swift */,
+				57F27B2726C345480051692F /* UIViewExtension.swift */,
 				577FD23226BE1694008C0F55 /* NewsModel.swift */,
 				575B5DC32658C8C800FEB99F /* NetworkManager.swift */,
 				572248EC26C06BA7001A8C0C /* UIimageDownloader.swift */,
@@ -329,6 +332,7 @@
 				57D4A7CE26C1B80A00D25EB7 /* WatchListViewController.swift in Sources */,
 				575B5DC42658C8C800FEB99F /* NetworkManager.swift in Sources */,
 				57D4A7D026C1B8C700D25EB7 /* WatchListTableViewCell.swift in Sources */,
+				57F27B2826C345480051692F /* UIViewExtension.swift in Sources */,
 				577FD23726BE18CF008C0F55 /* NewsViewController.swift in Sources */,
 				577FD23326BE1694008C0F55 /* NewsModel.swift in Sources */,
 				575B5DC22658C5F300FEB99F /* Memecoins.swift in Sources */,
